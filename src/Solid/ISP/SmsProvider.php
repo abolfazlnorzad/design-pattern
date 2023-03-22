@@ -2,7 +2,7 @@
 
 namespace Src\Solid\ISP;
 
-class SmsProvider implements NotifierInterface
+class SmsProvider implements SMSInterface
 {
 
     public function sendSMS()
@@ -10,13 +10,4 @@ class SmsProvider implements NotifierInterface
         // TODO: Implement sendSMS() method.
     }
 
-    public function sendEmail()
-    {
-        // TODO: Implement sendEmail() method. !!! ????
-    }
-
-    public function sendWebSocket()
-    {
-        // TODO: Implement sendWebSocket() method. !!! ????
-    }
 }
