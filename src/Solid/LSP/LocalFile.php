@@ -20,4 +20,8 @@ class LocalFile implements FileInterface
         // TODO: Implement move() method.
     }
 
+    public function changePermission() // must move to interface or protected or private
+    {
+
+    }
 }
