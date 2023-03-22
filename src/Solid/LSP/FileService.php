@@ -16,7 +16,7 @@ class FileService
 
     public function getFile()
     {
-        $this->file->download(); // return string or bool ???
+        $this->file->download(); // return string
     }
 
 }

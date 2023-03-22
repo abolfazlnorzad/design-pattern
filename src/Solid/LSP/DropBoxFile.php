@@ -20,7 +20,7 @@ class DropBoxFile implements DownloadableFileInterface
         // TODO: Implement move() method.
     }
 
-    public function download() :bool
+    public function download() :string
     {
         // TODO: Implement download() method.
     }
