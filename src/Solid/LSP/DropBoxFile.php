@@ -2,7 +2,7 @@
 
 namespace Src\Solid\LSP;
 
-class DropBoxFile implements FileInterface
+class DropBoxFile implements DownloadableFileInterface
 {
 
     public function rename()

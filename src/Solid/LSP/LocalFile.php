@@ -20,8 +20,4 @@ class LocalFile implements FileInterface
         // TODO: Implement move() method.
     }
 
-    public function download()
-    {
-       // download in local ??? !!!
-    }
 }

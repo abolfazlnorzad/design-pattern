@@ -10,5 +10,5 @@ interface FileInterface
 
     public function move();
 
-    public function download();
+
 }
