@@ -2,21 +2,17 @@
 
 namespace Src\Solid\LSP;
 
-class FileService
+use http\Exception\InvalidArgumentException;
+
+class FileService implements FileServiceInterface
 {
-    private $file;
 
-    /**
-     * @param $file
-     */
-    public function __construct(DownloadableFileInterface $file)
+
+    public function doSomething(FileInterface $file)
     {
-        $this->file = $file;
+        if (!$file instanceof LocalFile){
+            throw new InvalidArgumentException(" just LocalFile ! ! ! ");
+        }
+        // do some thing . . .
     }
-
-    public function getFile()
-    {
-        $this->file->download(); // return string
-    }
-
 }
