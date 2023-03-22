@@ -4,5 +4,5 @@ namespace Src\Solid\LSP;
 
 interface FileServiceInterface
 {
-    public function doSomething(FileInterface $file);
+    public function doSomething(DoSomethingableFileServiceInterface $doSomethingableFileService);
 }

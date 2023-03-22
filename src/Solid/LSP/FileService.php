@@ -6,13 +6,8 @@ use http\Exception\InvalidArgumentException;
 
 class FileService implements FileServiceInterface
 {
-
-
-    public function doSomething(FileInterface $file)
+    public function doSomething(DoSomethingableFileServiceInterface $file)
     {
-        if (!$file instanceof LocalFile){
-            throw new InvalidArgumentException(" just LocalFile ! ! ! ");
-        }
         // do some thing . . .
     }
 }
