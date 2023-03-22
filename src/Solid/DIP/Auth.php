@@ -6,13 +6,13 @@ use http\Exception\RuntimeException;
 
 class Auth
 {
-    public function __construct(private Connection $connection)
+    public function __construct(private UserProviderInterface $userProvider)
     {
     }
 
     public function check(string $username , string $password) :bool
     {
-        $res = $this->connection->query($username ,$password);
+        $res = $this->userProvider->findUser($username ,$password);
         if (!$res) {
             throw new RuntimeException("err");
         }
