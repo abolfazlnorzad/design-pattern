@@ -7,7 +7,7 @@ use http\Exception\InvalidArgumentException;
 class GenericEncoder
 {
 
-    public function __construct(private EncoderFactory $encoderFactory)
+    public function __construct(private EncoderFactoryInterface $encoderFactory)
     {
     }
 

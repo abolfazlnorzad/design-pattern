@@ -4,17 +4,24 @@ namespace Src\Solid\OCP;
 
 use http\Exception\InvalidArgumentException;
 
-class EncoderFactory
+class EncoderFactory implements EncoderFactoryInterface , EncoderFactoryConfigInterface
 {
+    public $factories = [];
+    public function addFactory(string $format, callable $factory): void
+    {
+        $this->factories[$format]= $factory();
+    }
+
     public function createEncoder(string $format) :EncoderInterface
     {
-        if ($format == 'json'){
-            $encoder = new JSONEncoder();
-        }elseif ($format == 'xml'){
-            $encoder = new XMLEncoder();
-        }else{
-            throw new InvalidArgumentException("the format is not valid .");
+        if (! isset($this->factories[$format])){
+            throw new InvalidArgumentException("format is not valid");
         }
-        return $encoder;
+
+        $factory = $this->factories[$format];
+        return $factory();
+
     }
+
+
 }
