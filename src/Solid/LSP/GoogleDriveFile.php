@@ -20,7 +20,7 @@ class GoogleDriveFile implements DownloadableFileInterface
         // TODO: Implement move() method.
     }
 
-    public function download()
+    public function download() :string
     {
         // TODO: Implement download() method.
     }
