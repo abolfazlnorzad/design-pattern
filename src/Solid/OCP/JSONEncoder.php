@@ -2,7 +2,7 @@
 
 namespace Src\Solid\OCP;
 
-class JSONEncoder
+class JSONEncoder implements EncoderInterface
 {
     public function encode(string $format) :string
     {

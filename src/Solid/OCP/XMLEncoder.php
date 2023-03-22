@@ -2,7 +2,7 @@
 
 namespace Src\Solid\OCP;
 
-class XMLEncoder
+class XMLEncoder implements EncoderInterface
 {
     public function encode(string $format) :string
     {
