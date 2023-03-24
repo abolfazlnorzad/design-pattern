@@ -3,6 +3,9 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Src\FactoryMethod\InstagramPublisherFactory;
+use Src\FactoryMethod\LinkedInPublisherFactory;
+use Src\FactoryMethod\MessagePublisher;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +22,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        $this->app->bind(MessagePublisher::class,InstagramPublisherFactory::class);
     }
 }
