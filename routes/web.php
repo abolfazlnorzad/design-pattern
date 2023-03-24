@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get("factory-method",[\Src\FactoryMethod\Controllers\MessageController::class,"publish"]);
+Route::get("factory-method",[\Src\FactoryMethod\Publisher\Controllers\MessageController::class,"publish"]);

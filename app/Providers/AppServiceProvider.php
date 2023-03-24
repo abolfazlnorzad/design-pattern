@@ -3,9 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Src\FactoryMethod\InstagramPublisherFactory;
-use Src\FactoryMethod\LinkedInPublisherFactory;
-use Src\FactoryMethod\MessagePublisher;
+use Src\FactoryMethod\Publisher\InstagramPublisherFactory;
+use Src\FactoryMethod\Publisher\MessagePublisher;
 
 class AppServiceProvider extends ServiceProvider
 {

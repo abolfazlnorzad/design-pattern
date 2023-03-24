@@ -1,11 +1,11 @@
 <?php
 
-namespace Src\FactoryMethod\Controllers;
+namespace Src\FactoryMethod\Publisher\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Src\FactoryMethod\Message;
-use Src\FactoryMethod\MessagePublisher;
+use Src\FactoryMethod\Publisher\Message;
+use Src\FactoryMethod\Publisher\MessagePublisher;
 
 class MessageController extends Controller
 {

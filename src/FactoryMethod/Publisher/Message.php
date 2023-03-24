@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\FactoryMethod;
+namespace Src\FactoryMethod\Publisher;
 
 class Message
 {
