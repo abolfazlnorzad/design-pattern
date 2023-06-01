@@ -1,5 +1,7 @@
 <?php
 
+// factory class =>  create new object
+
 namespace Src\Solid\Srp;
 
 class ConfirmationMailFactory

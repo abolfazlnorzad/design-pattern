@@ -10,3 +10,9 @@
 
      specific tasks are delegated to private methods
 
+
+### What problems does not complying with this principle cause?
+    Test writing becomes difficult
+    
+    Development becomes difficult
+
