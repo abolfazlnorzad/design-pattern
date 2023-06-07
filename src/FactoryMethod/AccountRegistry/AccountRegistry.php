@@ -9,7 +9,7 @@ abstract class AccountRegistry
 {
     public function registerAccount(User $user , int $balance) :\Src\FactoryMethod\AccountRegistry\Models\Account
     {
-        $account = $this->getAccount();
+        $account = $this->createAccount();
         if ($account->minBalanceDefinition() > $balance){
             throw new \Exception("موجودی کافی نیست");
         }
@@ -19,5 +19,5 @@ abstract class AccountRegistry
         return $newAccount;
     }
 
-    abstract protected function getAccount(): Account;
+    abstract protected function createAccount(): Account;
 }
