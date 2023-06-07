@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Src\FactoryMethod\Provides;
 
 use Illuminate\Support\ServiceProvider;
 use Src\FactoryMethod\Publisher\InstagramPublisherFactory;
@@ -21,6 +21,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-      
+        $this->app->bind(MessagePublisher::class,InstagramPublisherFactory::class);
     }
 }
