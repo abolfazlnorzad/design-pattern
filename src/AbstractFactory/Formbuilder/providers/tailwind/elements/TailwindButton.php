@@ -1,7 +1,7 @@
 <?php
 
 namespace Src\AbstractFactory\Formbuilder\providers\tailwind\elements;
-class TailwindButton implements \Src\AbstractFactory\Formbuilder\elements\Input
+class TailwindButton implements \Src\AbstractFactory\Formbuilder\elements\Button
 {
 
     public function render()
