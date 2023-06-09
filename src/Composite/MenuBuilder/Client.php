@@ -15,5 +15,6 @@ class Client
         $subMenu->add($item3);
         $parentMenu = new MenuCollection();
         $parentMenu->add($subMenu);
+        $parentMenu->build();
     }
 }
