@@ -14,7 +14,7 @@ class AccountsController extends Controller
     public function register(Request $request)
     {
         $service = new AccountService($this->typeOfAccount($request->type));
-        $service->registerAccount(Auth::user() ,$request->balance);
+        $service->register(Auth::user() ,$request->balance);
     }
 
     private function typeOfAccount(string $type)
