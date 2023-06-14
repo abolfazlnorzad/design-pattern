@@ -23,8 +23,8 @@ class CacheProductRepository implements ProductRepositoryInterface
     public function getAll()
     {
         $result = $this->cache->get("all-product");
-        if (is_null($result)){
-            $this->cache->set("all-product",$this->productRepository->getAll());
+        if (is_null($result)) {
+            $result = $this->cache->set("all-product", $this->productRepository->getAll());
         }
         return $result;
     }

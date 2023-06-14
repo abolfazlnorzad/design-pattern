@@ -1,4 +1,4 @@
-### facade is a structural design pattern that provides a simplefied interface to a library,aframeworke or any other complex set of classes.
+### facade is a structural design pattern that provides a simplified interface to a library,a framework or any other complex set of classes.
 
 
 #### Applicability:
