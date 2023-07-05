@@ -11,7 +11,7 @@ use Src\AbstractFactory\Formbuilder\providers\tailwind\elements\TailwindInput;
 class TailwindFormUiFactory implements FormUiBuilderFactory
 {
 
-    public function createButton(): TailwindButton
+    public function createButton(): ‌ع
     {
        return  new TailwindButton();
     }
