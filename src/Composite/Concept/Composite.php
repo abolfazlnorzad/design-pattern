@@ -5,16 +5,16 @@ namespace Src\Composite\Concept;
 class Composite implements Component
 {
 
-    private $component = [];
+    private $components = [];
 
     public function addComponent(Component $component)
     {
-        $this->component[] = $component;
+        $this->components[] = $component;
     }
 
     public function operation()
     {
-        foreach ($this->component as $component){
+        foreach ($this->components as $component){
             $component->operation();
         }
     }
